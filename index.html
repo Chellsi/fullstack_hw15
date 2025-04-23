@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/img/icon-glamp.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <title>WoodSilence</title>
+  </head>
+  <body class="bg-green-50 font-sans">
+    <header class="md:fixed md:top-0 md:left-0 md:right-0 bg-green-900 text-white shadow-lg z-50">
+      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <i class="fa fa-leaf text-2xl text-green-300"></i>
+          <a href="#" class="hover:text-green-300">
+            <span class="text-xl font-bold">WoodSilence</span>
+          </a>
+        </div> 
+        <nav class="hidden md:flex space-x-4 lg:space-x-8">
+            <a href="#" class="hover:text-green-300">Home</a>
+            <a href="#" class="hover:text-green-300">For rent</a>
+            <a href="#" class="hover:text-green-300">Services</a>
+            <a href="#" class="hover:text-green-300">About us</a>
+            <a href="#" class="hover:text-green-300">Contacts</a>
+        </nav>
+        <div class="flex items-center space-x-4">
+          <a href="#" class="bg-green-600 hover:bg-green-300 hover:text-black py-2 px-4 rounded-lg text-sm font-medium">Book a house</a>
+          <button class="md:hidden text-2xl">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="relative h-screen">
+      <img src="/assets/img/panoram-karp.jpg" alt="Hero background" class="absolute inset-0 w-full h-full object-cover object-center brightness-100 z-0">
+      <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+        <div class="max-w-2xl text-white">
+          <h1 class="text-4xl md:text-6xl text-shadow-green-950 text-shadow-xs font-bold mb-6">
+            Rest in the heart of the forest
+          </h1>
+          <p class="text-lg md:text-xl text-shadow-green-950 text-shadow-xs mb-8">
+            Experience the tranquility of nature in our cozy wooden houses, surrounded by the beauty of the Carpathians.
+          </p>
+          <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
+            <h3 class="text-gray-800 font-bold text-xl mb-4">Book your stay</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+              <div>
+                <label class="block text-gray-700 text-sm font-medium mb-2">Date arrival</label>
+                <input type="date" class="w-full p-2 border border-gray-300 rounded-md text-gray-800">
+              </div>
+              <div>
+                <label class="block text-gray-700 text-sm font-medium mb-2">Date departure</label>
+                <input type="date" class="w-full p-2 border border-gray-300 rounded-md text-gray-800">
+              </div>
+              <div>
+                <label class="block text-gray-700 text-sm font-medium mb-2">Number of guests</label>
+                <select class="w-full p-2 border border-gray-300 rounded-md text-gray-800">
+                  <option>1 guest</option>
+                  <option>2 guests</option>
+                  <option>3 guests</option>
+                  <option>4 guests</option>
+                  <option>5+ guests</option>
+                </select>
+              </div>
+            </div>
+            <button class="w-full bg-green-600 hover:bg-green-300 hover:text-black py-3 rounded-md font-medium transition">Find available houses</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-12 bg-green-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Why choose us?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="bg-white p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-md">
+              <i class="fas fa-map-marker-alt text-green-600 text-2xl"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2 text-gray-800">Ideal location</h3>
+            <p class="text-gray-600">Our houses are located in the heart of the Carpathians, surrounded by nature and fresh air.</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-white p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-md">
+              <i class="fas fa-leaf text-green-600 text-2xl"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2 text-gray-800">Ecological materials</h3>
+            <p class="text-gray-600">Our houses are made of natural wood, which creates a cozy and healthy atmosphere.</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-white p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-md">
+              <i class="fas fa-wifi text-green-600 text-2xl"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2 text-gray-800">Modern amenities</h3>
+            <p class="text-gray-600">Each house is equipped with modern amenities, including Wi-Fi, heating, and kitchen appliances.</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-white p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-md">
+              <i class="fas fa-utensils text-green-600 text-2xl"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2 text-gray-800">Organic food</h3>
+            <p class="text-gray-600">We offer organic food from local farmers, which is delivered directly to your house.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-green-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20 lg:grid-cols-3 lg:gap-36 mb-8">
+          <div>
+            <h3 class="font-bold text-lg mb-4">Contact us</h3>
+            <ul class="space-y-3 text-green-100">
+              <li class="flex items-center">
+                <i class="fas fa-map-marker-alt mr-2 text-green-300"></i>
+                <span>Carpathian region, Ukraine</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-phone mr-2 text-green-300"></i>
+                <span>+380 97 123 4567</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-envelope mr-2 text-green-300"></i>
+                <a href="mailto:info@lisova-tysha.ua">info@lisova-tysha.ua</a>
+              </li>
+              <li class="flex items-center">
+                <span>Find us on social media:</span>
+                <div class="flex mx-2 space-x-4">
+                  <a href="#" class="text-green-300 hover:text-white text-lg">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" class="text-green-300 hover:text-white text-lg">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" class="text-green-300 hover:text-white text-lg">
+                    <i class="fab fa-telegram"></i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg mb-4">Subscribe to our newsletter</h3>
+            <p class="text-green-100 mb-4">
+              Stay updated with our latest offers and news. Subscribe to our newsletter and get a 10% discount on your first booking!
+            </p>
+            <form class="flex flex-col space-y-2">
+              <input type="email" placeholder="Your email" class="px-4 py-2 rounded-md bg-green-100 text-black">
+              <button class="bg-green-600 hover:bg-green-300 hover:text-black py-2 px-4 rounded-md transition">Subscribe</button>
+            </form>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg mb-4">Quick Links</h3>
+            <ul class="space-y-2 text-green-100">
+              <li><a href="#" class="hover:text-green-300">Home</a></li>
+              <li><a href="#" class="hover:text-green-300">For rent</a></li>
+              <li><a href="#" class="hover:text-green-300">Services</a></li>
+              <li><a href="#" class="hover:text-green-300">Gallery</a></li>
+              <li><a href="#" class="hover:text-green-300">Feedback</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-green-800 pt-6 text-center text-green-300 text-sm">
+          <p>
+            &copy; 2023 WoodSilence. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
