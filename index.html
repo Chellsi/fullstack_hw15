@@ -2,14 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="assets/img/icon-glamp.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/img/icon-glamp.jpg">
     <link rel="stylesheet" href="vendors/@fortawesome/fontawesome-free/css/all.min.css">
     <title>WoodSilence</title>
   </head>
-  <body class="bg-green-50 font-sans">
-    <header class="md:fixed md:top-0 md:left-0 md:right-0 bg-green-900 text-white shadow-lg z-50">
+  <body class="page-container">
+    <header class="header-container">
       <div class="container mx-auto px-4 py-4 flex justify-between items-center">
         <div class="flex items-center space-x-2">
           <i class="fa fa-leaf text-2xl text-green-300"></i>
@@ -104,7 +103,7 @@
         </div>
       </div>
     </section>
-    <footer class="bg-green-900 text-white py-12">
+    <footer class="footer-container">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-20 lg:grid-cols-3 lg:gap-36 mb-8">
           <div>
@@ -166,5 +165,7 @@
         </div>
       </div>
     </footer>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

@@ -1,1 +1,13 @@
-@import 'tailwindcss';
+@import './tailwind.config.css';
+
+.page-container {
+    @apply bg-green-50 font-sans;
+}
+
+.header-container {
+    @apply md:fixed md:top-0 md:left-0 md:right-0 bg-green-900 text-white shadow-lg z-50;
+}
+
+.footer-container {
+    @apply bg-green-900 text-white py-12;
+}
