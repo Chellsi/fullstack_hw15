@@ -4,57 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="assets/img/icon-glamp.jpg">
-    <link rel="stylesheet" href="vendors/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./vendors/@fortawesome/fontawesome-free/css/all.min.css">
     <title>WoodSilence</title>
   </head>
   <body class="page-container">
-    <header class="header-container">
-      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div class="flex items-center space-x-2">
-          <i class="fa fa-leaf text-2xl text-green-300"></i>
-          <a href="#" class="hover:text-green-300">
-            <span class="text-xl font-bold">WoodSilence</span>
+    <header class="header">
+      <div class="icon">
+        <div class="icon__container">
+          <i class="icon__image fa fa-leaf"></i>
+          <a href="#" class="icon__description">
+            <span class="icon__text">WoodSilence</span>
           </a>
         </div> 
-        <nav class="hidden md:flex space-x-4 lg:space-x-8">
-            <a href="#" class="hover:text-green-300">Home</a>
-            <a href="#" class="hover:text-green-300">For rent</a>
-            <a href="#" class="hover:text-green-300">Services</a>
-            <a href="#" class="hover:text-green-300">About us</a>
-            <a href="#" class="hover:text-green-300">Contacts</a>
+        <nav class="navbar">
+            <a href="#" class="navbar__link">Home</a>
+            <a href="#" class="navbar__link">For rent</a>
+            <a href="#" class="navbar__link">Services</a>
+            <a href="#" class="navbar__link">About us</a>
+            <a href="#" class="navbar__link">Contacts</a>
         </nav>
-        <div class="flex items-center space-x-4">
-          <a href="#" class="bg-green-600 hover:bg-green-300 hover:text-black py-2 px-4 rounded-lg text-sm font-medium">Book a house</a>
-          <button class="md:hidden text-2xl">
+        <div class="fast-action">
+          <a href="#" class="fast-action__link">Book a house</a>
+          <button class="fast-action__button">
             <i class="fas fa-bars"></i>
           </button>
         </div>
       </div>
     </header>
-    <section class="relative h-screen">
-      <img src="/assets/img/panoram-karp.jpg" alt="Hero background" class="absolute inset-0 w-full h-full object-cover object-center brightness-100 z-0">
-      <div class="container mx-auto px-4 h-full flex items-center relative z-10">
-        <div class="max-w-2xl text-white">
-          <h1 class="text-4xl md:text-6xl text-shadow-green-950 text-shadow-xs font-bold mb-6">
+    <section class="hero">
+      <img src="/assets/img/panoram-karp.jpg" alt="Hero background" class="hero-background">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-content__title">
             Rest in the heart of the forest
           </h1>
-          <p class="text-lg md:text-xl text-shadow-green-950 text-shadow-xs mb-8">
+          <p class="hero-content__description">
             Experience the tranquility of nature in our cozy wooden houses, surrounded by the beauty of the Carpathians.
           </p>
-          <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
-            <h3 class="text-gray-800 font-bold text-xl mb-4">Book your stay</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+          <div class="hero-form bg-opacity-90">
+            <h3 class="hero-form__title">Book your stay</h3>
+            <div class="hero-form__grid">
               <div>
-                <label class="block text-gray-700 text-sm font-medium mb-2">Date arrival</label>
-                <input type="date" class="w-full p-2 border border-gray-300 rounded-md text-gray-800">
+                <label class="hero-form__label">Date arrival</label>
+                <input type="date" class="hero-form__input">
               </div>
               <div>
-                <label class="block text-gray-700 text-sm font-medium mb-2">Date departure</label>
-                <input type="date" class="w-full p-2 border border-gray-300 rounded-md text-gray-800">
+                <label class="hero-form__label">Date departure</label>
+                <input type="date" class="hero-form__input">
               </div>
               <div>
-                <label class="block text-gray-700 text-sm font-medium mb-2">Number of guests</label>
-                <select class="w-full p-2 border border-gray-300 rounded-md text-gray-800">
+                <label class="hero-form__label">Number of guests</label>
+                <select class="hero-form__input">
                   <option>1 guest</option>
                   <option>2 guests</option>
                   <option>3 guests</option>
@@ -63,7 +63,7 @@
                 </select>
               </div>
             </div>
-            <button class="w-full bg-green-600 hover:bg-green-300 hover:text-black py-3 rounded-md font-medium transition">Find available houses</button>
+            <button class="hero-form__button">Find available houses</button>
           </div>
         </div>
       </div>
