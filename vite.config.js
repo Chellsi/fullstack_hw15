@@ -8,15 +8,20 @@ export default defineConfig( {
     build: {
         outDir: './dist',
         cssCodeSplit: true,
-        assetsDir : './assets',
+        assetsDir : 'assets',
         sourcemap: true,
         rollupOptions: {
             input: {
                 main: 'index.html'
             },
             output: {
-                entryFileNames: 'output.js',
-                assetFileNames: 'output.[ext]',
+                entryFileNames: 'assets/output.js',
+                assetFileNames: ({name}) => {
+                    if (name && name.endsWith('.css')) {
+                        return 'assets/output.css';
+                    }
+                    return 'assets/[name].[ext]';
+                },
             },
         },
     }
