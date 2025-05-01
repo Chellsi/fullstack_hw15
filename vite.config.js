@@ -14,6 +14,10 @@ export default defineConfig( {
             input: {
                 main: 'index.html'
             },
+            output: {
+                entryFileNames: 'output.js',
+                assetFileNames: 'output.[ext]',
+            },
         },
     }
 });

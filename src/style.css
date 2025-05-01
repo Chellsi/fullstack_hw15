@@ -49,7 +49,7 @@
     @apply md:hidden text-2xl;
 }
 
-/* Main Content */
+/* Hero Content */
 
 .hero {
     @apply relative h-screen;
@@ -99,8 +99,114 @@
     @apply w-full bg-green-600 hover:bg-green-300 hover:text-black py-3 rounded-md font-medium transition;
 }
 
+/* Benefits Section */
 
+.benefits {
+    @apply py-12 bg-green-50;
+}
+
+.benefits-container {
+    @apply container mx-auto px-4;
+}
+
+.benefits-title {
+    @apply text-3xl font-bold text-center mb-12 text-gray-800;
+}
+
+.benefits-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8;
+}
+
+.benefits-item {
+    @apply text-center;
+}
+
+.benefits-item__icon {
+    @apply bg-white p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-md;
+}
+
+.benefits-item__image {
+    @apply text-green-600 text-2xl;
+}
+
+.benefits-item__title {
+    @apply font-bold text-lg mb-2 text-gray-800;
+}
+
+.benefits-item__description {
+    @apply text-gray-600;
+}
+
+/* Footer */
+
+.footer {
+    @apply bg-green-900 text-white py-12;
+}
 
 .footer-container {
-    @apply bg-green-900 text-white py-12;
+    @apply container mx-auto px-4;
+}
+
+.footer-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-20 lg:grid-cols-3 lg:gap-36 mb-8;
+}
+
+.footer-contacts__title {
+    @apply font-bold text-lg mb-4;
+}
+
+.footer-contacts__list {
+    @apply space-y-3 text-green-100;
+}
+
+.footer-contacts__item {
+    @apply flex items-center;
+}
+
+.footer-contacts__icon {
+    @apply mr-2 text-green-300;
+}
+
+.footer-social {
+    @apply flex mx-2 space-x-4;
+}
+
+.footer-social__link {
+    @apply text-green-300 hover:text-white text-lg;
+}
+
+.footer-subscription__title {
+    @apply font-bold text-lg mb-4;
+}
+
+.footer-subscription__description {
+    @apply text-green-100 mb-4;
+}
+
+.footer-subscription__form {
+    @apply flex flex-col space-y-2;
+}
+
+.footer-subscription__input {
+    @apply px-4 py-2 rounded-md bg-green-100 text-black;
+}
+
+.footer-subscription__button {
+    @apply bg-green-600 hover:bg-green-300 hover:text-black py-2 px-4 rounded-md transition;
+}
+
+.footer-links__title {
+    @apply font-bold text-lg mb-4;
+}
+
+.footer-links__list {
+    @apply space-y-2 text-green-100;
+}
+
+.footer-links__item {
+    @apply hover:text-green-300;
+}
+
+.footer-copyright {
+    @apply border-t border-green-800 pt-6 text-center text-green-300 text-sm;
 }
